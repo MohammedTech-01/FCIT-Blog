@@ -750,81 +750,56 @@ nav ul li a:hover {
 
 /* Events Page */
 .events-container {
-  width: 80%;
-  margin: 100px auto;
-  font-family: 'Roboto', sans-serif;
-  /* Modern font for a professional look */
-  color: #333;
-}
-
-.events-container h1 {
+  margin: 20px auto;
+  padding: 20px;
   text-align: center;
-  font-size: 2.5rem;
-  color: #fff;
-  /* Darker green for a sleek look */
-  margin-bottom: 30px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  border-bottom: 2px solid #2E8B57;
-  display: inline-block;
-  padding-bottom: 10px;
 }
 
-/* Table Styles */
 .events-table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 20px;
-  background-color: #fff;
-  /* Clean white background */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  /* Subtle shadow for depth */
-  border-radius: 10px;
-  overflow: hidden;
-  /* Rounded edges */
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+}
+
+.events-table caption {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .events-table th,
 .events-table td {
-  padding: 15px;
+  border: 1px solid #ddd;
+  padding: 8px;
   text-align: left;
-  border-bottom: 1px solid #ddd;
 }
 
 .events-table th {
-  background-color: #2E8B57;
+  background-color: #215a29;
   color: #fff;
+}
+
+tfoot td {
   font-weight: bold;
-  font-size: 1.1rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  background-color: #eaeaea;
 }
 
-.events-table tr:nth-child(even) {
-  background-color: #f9f9f9;
-  /* Light gray for even rows */
-}
-
-.events-table tr:nth-child(odd) {
-  background-color: #fff;
-  /* White for odd rows */
-}
-
-.events-table tr:hover {
-  background-color: #f1f1f1;
-  /* Light hover effect */
+#print-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #215a29;
+  color: white;
+  border: none;
   cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
 }
 
-.events-table td {
-  color: #555;
-  font-size: 1rem;
-  line-height: 1.5;
-}
-
-.events-table tr:last-child td {
-  border-bottom: none;
-  /* Remove border for the last row */
+#print-btn:hover {
+  background-color: #1a4821;
 }
 
 /* Contact Page Layout */

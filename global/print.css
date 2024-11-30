@@ -1,0 +1,30 @@
+body * {
+    visibility: hidden;
+}
+
+.events-table,
+.events-table * {
+    visibility: visible;
+}
+
+.events-table {
+    margin: 0;
+    width: 100%;
+    border: none;
+}
+
+.events-table caption {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.events-table th,
+.events-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+tfoot {
+    visibility: hidden;
+}

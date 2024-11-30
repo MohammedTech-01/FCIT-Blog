@@ -1,34 +1,57 @@
 async function populateTable() {
     try {
-        console.log("Fetching events..."); // Step 1: Log before fetch
-        const response = await fetch('/CPCS403-Final/admin/event.php'); // Absolute path
-        const events = await response.json(); // Parse JSON response
-        console.log("Events fetched:", events); // Step 2: Log fetched data
+        const response = await fetch('/CPCS403-Final/admin/event.php');
+        const events = await response.json();
 
         const tbody = document.getElementById('events-tbody');
         tbody.innerHTML = ''; // Clear existing rows
 
         if (events.length > 0) {
-            console.log("Populating table..."); // Step 3: Log before populating
-            events.forEach(event => {
-                const row = `
-                    <tr>
-                        <td>${event.event_name}</td>
-                        <td>${event.event_date}</td>
-                        <td>${event.event_time}</td>
-                        <td>${event.location}</td>
-                        <td>${event.description}</td>
-                    </tr>
-                `;
+            let currentEventDate = null; // Track the current event date
+            let rowspanCount = 0;
+
+            events.forEach((event, index) => {
+                let row = '';
+
+                // If it's a new date, use rowspan
+                if (event.event_date !== currentEventDate) {
+                    // Count occurrences of the same date
+                    rowspanCount = events.filter(e => e.event_date === event.event_date).length;
+
+                    row += `
+                        <tr>
+                            <td rowspan="${rowspanCount}">${event.event_date}</td>
+                            <td>${event.event_name}</td>
+                            <td>${event.event_time}</td>
+                            <td>${event.location}</td>
+                            <td>${event.description}</td>
+                        </tr>
+                    `;
+                } else {
+                    // Normal row without rowspan for date
+                    row += `
+                        <tr>
+                            <td>${event.event_name}</td>
+                            <td>${event.event_time}</td>
+                            <td>${event.location}</td>
+                            <td>${event.description}</td>
+                        </tr>
+                    `;
+                }
+
+                currentEventDate = event.event_date; // Update current date
                 tbody.innerHTML += row;
             });
         } else {
-            console.log("No events found."); // Step 4: Log no events
             tbody.innerHTML = '<tr><td colspan="5">No events found.</td></tr>';
         }
     } catch (error) {
-        console.error('Error fetching events:', error); // Log any errors
+        console.error('Error fetching events:', error);
     }
 }
+
+document.getElementById('print-btn').addEventListener('click', () => {
+    window.print();
+});
 
 window.onload = populateTable;
