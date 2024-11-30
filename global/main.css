@@ -1,0 +1,1441 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1b4821;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  /* This ensures that body takes at least the full height of the screen */
+}
+
+/* .container holds all the content, but the footer is outside the container */
+.container {
+  flex: 1;
+  /* This makes the container take up all the available space */
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Navbar styling */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: transparent;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+nav h1 {
+  color: white;
+}
+
+nav ul {
+  list-style: none;
+  font-size: 16px;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #215a29;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  /* Slight transparency */
+  border-radius: 30px;
+  padding: 5px 10px;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+#search-input {
+  border: none;
+  background-color: transparent;
+  padding: 10px 15px;
+  font-size: 14px;
+  outline: none;
+  color: white;
+  /* Text color */
+  width: 180px;
+  /* Adjust width */
+}
+
+#search-input::placeholder {
+  color: white;
+  opacity: 0.8;
+  /* Slight transparency for placeholder */
+}
+
+#search-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+}
+
+#search-btn svg {
+  width: 18px;
+  height: 18px;
+  filter: invert(1);
+  /* Invert colors to make the search icon white */
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.login-btn,
+.signup-btn {
+  padding: 8px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  color: white;
+}
+
+.login-btn {
+  background-color: #00509e;
+}
+
+.signup-btn {
+  background-color: #215a29;
+}
+
+/* Style for the username and log out button */
+.auth-buttons {
+  display: flex;
+  align-items: center;
+  /* Vertically center */
+  justify-content: center;
+  /* Horizontally center */
+  gap: 15px;
+  /* Space between elements */
+}
+
+.auth-buttons .username {
+  color: white;
+  font-size: 18px;
+  margin-right: 15px;
+  margin-left: 10px;
+  text-align: center;
+  /* Ensures that the text is centered if it spans multiple lines */
+}
+
+
+.auth-buttons .logout-btn {
+  background-color: #d9534f;
+  /* Red color for log out */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.auth-buttons .logout-btn:hover {
+  background-color: #c9302c;
+}
+
+
+/* Container for the sign-up page */
+.container-signup {
+  display: flex;
+  width: 70%;
+  /* Adjust the width of the container */
+  height: 90vh;
+  /* Adjust the height of the container */
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  /* Center the container on the page */
+  margin: 120px auto;
+  /* Adjust the top margin */
+}
+
+/* Left side: Sign-Up Form */
+.container-signup .signup-form {
+  flex: 1;
+  /* The form will take up 50% of the container */
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.container-signup h1 {
+  font-size: 28px;
+  /* Font size for heading */
+  color: #3627a6;
+  margin-bottom: 30px;
+}
+
+.container-signup form {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-signup label {
+  font-size: 12px;
+  /* Font size for labels */
+  color: #7c7c7c;
+  margin-bottom: 5px;
+}
+
+.container-signup input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  /* Font size for inputs */
+}
+
+.container-signup button {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  /* Font size for buttons */
+  margin-bottom: 10px;
+}
+
+.container-signup .signup-btn {
+  background-color: #378b44;
+  color: white;
+}
+
+.container-signup .home-btn {
+  background-color: #605e69;
+  color: white;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.container-signup .home-btn:hover {
+  background-color: #2b2084;
+}
+
+/* Right side: Image */
+.container-signup .signup-image {
+  flex: 1;
+  background: radial-gradient(circle,
+      rgba(7, 92, 0, 1) 28%,
+      rgba(99, 207, 115, 1) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-signup .signup-image img {
+  width: 100%;
+  height: auto;
+}
+
+
+/* Container for the login page */
+.container-login {
+  display: flex;
+  width: 70%;
+  /* Adjust the width of the container */
+  height: 80vh;
+  /* Adjust the height of the container */
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  /* Center the container on the page */
+  margin: 120px auto;
+  /* Adjust the top margin */
+}
+
+/* Left side: Login Form */
+.container-login .login-form {
+  flex: 1;
+  /* The form will take up 50% of the container */
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.container-login h1 {
+  font-size: 28px;
+  /* Font size for heading */
+  color: #3627a6;
+  margin-bottom: 30px;
+}
+
+.container-login form {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-login label {
+  font-size: 12px;
+  /* Font size for labels */
+  color: #7c7c7c;
+  margin-bottom: 5px;
+}
+
+.container-login input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  /* Font size for inputs */
+}
+
+.container-login .remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  margin-bottom: 25px;
+}
+
+.container-login .remember-forgot a {
+  color: #7c7c7c;
+  text-decoration: none;
+}
+
+.container-login button {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  /* Font size for buttons */
+}
+
+.container-login .login-btn {
+  background-color: #378b44;
+  color: white;
+}
+
+.container-login .signup-btn {
+  display: inline-block;
+  background-color: #075c00;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+/* Style the button inside the anchor tag */
+.container-login .signup-btn button {
+  background: none;
+  color: inherit;
+  cursor: pointer;
+  padding: 10px;
+}
+
+/* Right side: Image */
+.container-login .login-image {
+  flex: 1;
+  background: radial-gradient(circle,
+      rgba(7, 92, 0, 1) 28%,
+      rgba(99, 207, 115, 1) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-login .login-image img {
+  width: 100%;
+  height: auto;
+}
+
+/* Login and Signup */
+.container-login-signup {
+  width: 50%;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.container-login-signup h1 {
+  color: #4CAF50;
+}
+
+.container-login-signup p {
+  margin: 20px 0;
+  font-size: 18px;
+  color: #555;
+}
+
+.container-login-signup button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.container-login-signup button:hover {
+  background-color: #45a049;
+}
+
+
+/* Hero Section */
+#hero {
+  height: 100vh;
+  /* Full viewport height */
+  background-image: url("../images/heroPage.jpg");
+  /* Path to your background image */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Overlay to reduce visibility of the background image */
+#hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Black overlay with 50% opacity */
+  z-index: 1;
+  /* Make sure the overlay stays below the content */
+}
+
+/* Content inside the hero section */
+.hero-text {
+  position: relative;
+  z-index: 2;
+  /* Ensures the text stays above the overlay */
+  color: white;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.hero-text button {
+  padding: 10px 20px;
+  background-color: #215a29;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+.hero-text button:hover {
+  background-color: #215a50;
+}
+
+/* Hero Section for About Us Page */
+.about-us-hero {
+  background: radial-gradient(circle,
+      rgba(7, 92, 0, 1) 28%,
+      rgba(99, 207, 115, 1) 100%);
+  background-position: center;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.hero-text {
+  z-index: 1;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 18px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* About page */
+
+.about-container {
+  width: 90%;
+  margin: 120px auto;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Welcome Section */
+.welcome-section {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.welcome-section h1 {
+  font-size: 2.5rem;
+  color: #2E8B57;
+  margin-bottom: 20px;
+}
+
+.welcome-section p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin: 0 auto;
+  width: 80%;
+}
+
+/* Video Section */
+.video-section {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.video-section h2 {
+  font-size: 2rem;
+  color: #2E8B57;
+  margin-bottom: 15px;
+}
+
+.video-caption {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 10px;
+}
+
+/* Mission and Vision */
+.mission-vision {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.mission-vision .mission,
+.mission-vision .vision {
+  flex: 1;
+  background-color: #075c00;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.mission-vision h2 {
+  color: #2E8B57;
+  margin-bottom: 10px;
+}
+
+.mission-vision p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Team Section */
+.team-section {
+  text-align: center;
+}
+
+.team-section h2 {
+  font-size: 2rem;
+  color: #2E8B57;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.team-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.team-member {
+  text-align: center;
+  flex: 1;
+  max-width: 200px;
+}
+
+.team-member img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.team-member h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.team-member p {
+  font-size: 1rem;
+  color: #555;
+}
+
+
+/* Updated About Us Content */
+.about-us-content {
+  padding: 50px 20px;
+  background-color: #378b44;
+  text-align: center;
+  /* Center the content */
+}
+
+.about-container {
+  margin-bottom: 80px;
+  max-width: 800px;
+  /* Limit content width for better readability */
+  margin-left: auto;
+  margin-right: auto;
+  /* Center the container horizontally */
+}
+
+.about-container h2 {
+  font-size: 36px;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.about-container p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #d0d0d4;
+  margin-bottom: 25px;
+}
+
+/* Team Section */
+.team-section {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.team-member {
+  text-align: center;
+  flex: 1;
+  max-width: 200px;
+  /* Limit the width of team members */
+  margin: 0 10px;
+}
+
+.team-member img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.team-member h3 {
+  font-size: 22px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.team-member p {
+  font-size: 16px;
+  color: #f4f4f9;
+}
+
+
+/* Services Section */
+#services-section {
+  margin: 120px 30px 50px 30px;
+  height: 100%;
+}
+
+#services-section h1 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 36px;
+  color: white;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,
+      minmax(300px, 1fr));
+  /* Responsive grid */
+  gap: 30px;
+}
+
+/* Individual Service Card */
+.service-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.service-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+}
+
+.service-card h3 {
+  margin: 20px;
+  font-size: 20px;
+  color: #002147;
+}
+
+.service-card p {
+  margin: 0 20px 20px 20px;
+  font-size: 16px;
+  color: #555;
+}
+
+/* Events Page */
+.events-container {
+  width: 80%;
+  margin: 100px auto;
+  font-family: 'Roboto', sans-serif;
+  /* Modern font for a professional look */
+  color: #333;
+}
+
+.events-container h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #fff;
+  /* Darker green for a sleek look */
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-bottom: 2px solid #2E8B57;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+/* Table Styles */
+.events-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #fff;
+  /* Clean white background */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow for depth */
+  border-radius: 10px;
+  overflow: hidden;
+  /* Rounded edges */
+}
+
+.events-table th,
+.events-table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.events-table th {
+  background-color: #2E8B57;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.events-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+  /* Light gray for even rows */
+}
+
+.events-table tr:nth-child(odd) {
+  background-color: #fff;
+  /* White for odd rows */
+}
+
+.events-table tr:hover {
+  background-color: #f1f1f1;
+  /* Light hover effect */
+  cursor: pointer;
+}
+
+.events-table td {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.events-table tr:last-child td {
+  border-bottom: none;
+  /* Remove border for the last row */
+}
+
+/* Contact Page Layout */
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  margin-top: 100px;
+  /* Adjust based on your navbar height */
+  background-color: #215a29 !important;
+
+}
+
+/* Left column for the image */
+.contact-image {
+  flex: 1;
+  max-width: 100%;
+}
+
+.contact-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Right column for contact information */
+address {
+  font-style: normal;
+  line-height: 1.6;
+  margin-top: 10px;
+}
+
+.contact-info {
+  flex: 1;
+  padding-left: 30px;
+}
+
+.contact-info h2 {
+  font-size: 32px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.contact-info a {
+  color: #01468b;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-info a:hover {
+  color: #ffa500;
+}
+
+/* Left column: Blog navigation */
+.blog-page {
+  display: flex;
+  /* Make the child elements align horizontally */
+  justify-content: space-between;
+  /* Optionally space them out evenly */
+  gap: 20px;
+  /* Adds a gap between the columns */
+  margin: 120px 20px 50px 20px;
+}
+
+.blog-nav {
+  width: 20%;
+  background-color: #215a29;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.blog-nav h2 {
+  color: white;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.blog-nav ul {
+  list-style-type: none;
+}
+
+.blog-nav ul li {
+  margin-bottom: 10px;
+}
+
+.blog-nav ul li a {
+  color: white;
+}
+
+.blog-nav ul li a:hover {
+  color: #ffa500;
+}
+
+/* Middle column: Blog content */
+.blog-content {
+  width: 55%;
+}
+
+.blog-post {
+  margin-bottom: 40px;
+}
+
+.blog-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  /* Smooth hover effect */
+}
+
+.blog-img:hover {
+  transform: scale(1.05);
+  /* Enlarge the image slightly on hover */
+}
+
+.blog-title {
+  font-size: 28px;
+  color: #002147;
+  margin: 15px 0;
+}
+
+.blog-title a {
+  color: #002147;
+  text-decoration: none;
+}
+
+.blog-title a:hover {
+  text-decoration: underline;
+}
+
+.blog-author {
+  font-style: italic;
+  margin-bottom: 15px;
+  display: block;
+  color: #555;
+}
+
+.blog-intro {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+blockquote {
+  margin: 20px 0;
+  padding: 10px 20px;
+  background-color: #f0f0f0;
+  border-left: 5px solid #215a29;
+  font-style: italic;
+  color: #555;
+}
+
+ul,
+ol {
+  margin: 10px 0;
+  padding-left: 20px;
+}
+
+ul li,
+ol li {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+/* Right column: Suggested blogs */
+.suggested-blogs {
+  width: 20%;
+  background-color: #215a29;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.suggested-blogs h2 {
+  color: white;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.suggested-blogs ul {
+  list-style-type: none;
+}
+
+.suggested-blogs ul li {
+  margin-bottom: 10px;
+}
+
+.suggested-blogs ul li a {
+  color: white;
+}
+
+.suggested-blogs ul li a:hover {
+  color: #ffa500;
+}
+
+/* Full blog page layout */
+.fullblog-page {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+  padding: 20px 30px;
+  gap: 30px;
+}
+
+/* Left column: Full blog post */
+.blog-content {
+  width: 75%;
+  /* Main content occupies more space */
+}
+
+.blog-post {
+  background-color: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.blog-img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.blog-title {
+  font-size: 34px;
+  color: #002147;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.blog-author {
+  font-style: italic;
+  margin-bottom: 20px;
+  color: #555;
+  font-size: 16px;
+}
+
+.blog-post p {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+blockquote {
+  margin: 25px 0;
+  padding: 15px 25px;
+  background-color: #f0f0f0;
+  border-left: 5px solid #215a29;
+  font-style: italic;
+  color: #555;
+  font-size: 18px;
+}
+
+.blog-author-contact p {
+  margin-top: 30px;
+  font-size: 16px;
+  color: #333;
+}
+
+.blog-author-contact a {
+  color: #215a29;
+  text-decoration: none;
+}
+
+.blog-author-contact a:hover {
+  color: #ffa500;
+}
+
+/* Right column: Suggested blogs */
+.suggested-blogs {
+  width: 25%;
+  /* Smaller width for suggested blogs */
+  background-color: #215a29;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.suggested-blogs h2 {
+  color: white;
+  font-size: 24px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.suggested-blogs ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.suggested-blogs ul li {
+  margin-bottom: 15px;
+}
+
+.suggested-blogs ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.suggested-blogs ul li a:hover {
+  color: #ffa500;
+}
+/* General Layout for Write Blog Page */
+.write-blog-page {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  margin-top: 120px;
+}
+
+.write-blog-container {
+  background-color: #ffffff;
+  padding: 50px 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  width: 100%;
+  font-family: Arial, sans-serif;
+}
+
+/* Page Heading */
+.write-blog-container h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 32px;
+  color: #215a29;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+}
+
+/* Section Headings */
+fieldset {
+  margin-bottom: 30px;
+  border: none;
+}
+
+fieldset legend {
+  font-size: 20px;
+  font-weight: 600;
+  color: #215a29;
+  margin-bottom: 20px;
+  display: block;
+  text-align: left;
+}
+
+/* Form Styling */
+.blog-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+label {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Input, Select, and Textarea Styling */
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  background-color: #f9fafb;
+  color: #4b5563;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  margin-bottom: 10px;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #215a29;
+  box-shadow: 0 0 4px rgba(33, 90, 41, 0.2);
+  outline: none;
+}
+
+textarea {
+  resize: none;
+  min-height: 150px;
+}
+
+/* Radio and Checkbox Styling */
+.radio-group,
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.radio-group label,
+.checkbox-group label {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  color: #4b5563;
+}
+
+/* File Upload Styling */
+.file-upload-container {
+  border: 2px dashed #c0c4c9;
+  border-radius: 10px;
+  padding: 30px;
+  text-align: center;
+  background-color: #f9fafb;
+  transition: border-color 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.file-upload-container:hover {
+  border-color: #215a29;
+}
+
+.file-upload-container img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.file-upload-container p {
+  font-size: 14px;
+  color: #6b7280;
+  margin: 5px 0;
+}
+
+.file-upload-container a {
+  color: #3b4ce2;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.file-upload-container a:hover {
+  text-decoration: underline;
+}
+
+/* Buttons */
+.submit-btn,
+.cancel-btn {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.submit-btn {
+  background-color: #215a29;
+  color: #fff;
+  border: none;
+}
+
+.submit-btn:hover {
+  background-color: #1a4821;
+  transform: translateY(-2px);
+}
+
+.cancel-btn {
+  background-color: #f9f9f9;
+  color: #374151;
+  border: 1px solid #ddd;
+}
+
+.cancel-btn:hover {
+  background-color: #e5e7eb;
+  transform: translateY(-2px);
+}
+/* Centering the alert message */
+.alert {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centering both horizontally and vertically */
+  z-index: 9999;
+  padding: 40px 60px; /* Increase padding for more space inside */
+  max-width: 90%; /* Increase maximum width */
+  width: auto;
+  border-radius: 12px; /* Make corners more rounded */
+  text-align: center;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Bigger shadow for a larger box */
+  font-size: 24px; /* Increase font size for better readability */
+  background-color: rgb(168, 0, 0); /* Black background */
+  color: #fff; /* White text */
+  line-height: 1.5; /* Add line height for better text spacing */
+}
+
+/* Specific styles for different types of alerts */
+.alert.alert-warning {
+  border: 1px solid #f5c6cb;
+}
+
+.alert.alert-danger {
+  border: 1px solid #f5c6cb;
+}
+
+.alert.alert-success {
+  border: 1px solid #c3e6cb;
+}
+
+/* Optional: Make the alert disappear after a few seconds */
+.alert {
+  animation: fadeInOut 5s forwards;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+
+#gallery-container {
+  max-width: 1200px;
+  margin: 120px auto;
+  text-align: center;
+}
+
+#gallery-container h1 {
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+#gallery-container .thumbnails {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+#gallery-container .thumbnail {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 2px solid #ddd;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+#gallery-container .thumbnail:hover {
+  transform: scale(1.1);
+}
+
+#gallery-container .displayed-image {
+  margin-top: 30px;
+  width: 80%;
+  max-width: 800px;
+  height: auto;
+  border: 2px solid #ddd;
+}
+
+#gallery-container #displayed-image {
+  width: 100%;  /* Adjust the size */
+  max-width: 500px;  /* Set a maximum size for the image */
+  display: block;
+  margin: 20px auto;  /* Center the image */
+}
+
+.resume-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.resume-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #002147;
+  color: white;
+  position: relative;
+  /* Make sure footer isn't being pushed off-screen */
+}
