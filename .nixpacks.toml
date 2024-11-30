@@ -1,2 +1,10 @@
 [phases]
 setup = "php"
+install = ""
+build = ""
+
+[build]
+cmds = ["php -S 0.0.0.0:$PORT"]
+
+[variables]
+PORT = "8000"
