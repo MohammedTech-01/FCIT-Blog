@@ -2,7 +2,15 @@
 session_start();  // Start the session to access session variables like $_SESSION['username']
 $base_url = "/CPCS403-Final";
 ?>
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FCIT Blog</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 <div>
   <nav>
     <h1><a href="index.php">FCIT BLOG</a></h1>
