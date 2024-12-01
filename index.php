@@ -1,5 +1,7 @@
 <?php include 'includes/header.php'; ?>
 
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -17,12 +19,27 @@
         } else {
             // Dynamically load the page based on the URL
             $page = $_GET['page'];
-            $allowed_pages = ['home', 'resume', 'login', 'signup', 'services', 'about', 'contact', 'blog', 'fullblog', 'writeBlog', 'events', 'loginSignup', 'feedback', 'gallery_images']; // Allowed page names
+            $allowed_pages = [
+                'home',
+                'resume',
+                'login',
+                'signup',
+                'services',
+                'about',
+                'contact',
+                'blog',
+                'fullblog',
+                'writeBlog',
+                'events',
+                'loginSignup',
+                'feedback',
+                'gallery_images'
+            ]; // Allowed page names
         
             if (in_array($page, $allowed_pages)) {
                 include "pages/{$page}.php"; // Dynamically include the requested page
             } else {
-                echo "Page not found.";
+                echo '<p>Page not found.</p>';
             }
         }
         ?>
@@ -31,3 +48,4 @@
     <?php include 'includes/footer.php'; ?>
 </body>
 
+</html>
