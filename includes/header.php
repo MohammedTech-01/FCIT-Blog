@@ -29,7 +29,7 @@ $base_url = "/CPCS403-Final";
       <!-- Search bar -->
       <div class="search-container">
         <form action="index.php?page=search" method="GET">
-          <input type="text" name="query" placeholder="Search destination..." id="search-input" />
+          <input type="text" name="query" placeholder="Search destination..." id="search-input">
           <button type="submit" id="search-btn">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="24" height="24">
               <path
