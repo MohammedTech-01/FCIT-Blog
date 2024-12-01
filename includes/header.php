@@ -9,7 +9,6 @@ $base_url = "/CPCS403-Final";
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FCIT Blog</title>
-  <link rel="stylesheet" href="style.css">
 </head>
 <div>
   <nav>
@@ -27,7 +26,7 @@ $base_url = "/CPCS403-Final";
 
     <!-- Search bar -->
     <div class="search-container">
-      <input type="text" placeholder="Search destination..." id="search-input" />
+      <input type="text" placeholder="Search destination..." id="search-input">
       <button type="submit" id="search-btn">
         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
           <path
@@ -36,6 +35,7 @@ $base_url = "/CPCS403-Final";
         </svg>
       </button>
     </div>
+
 
     <!-- Auth Buttons -->
     <div class="auth-buttons">
