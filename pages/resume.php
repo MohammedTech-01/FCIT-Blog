@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
 </head>
-<body>
 
     <header class="header">
         <h1>My Resume</h1>
@@ -22,5 +21,4 @@
         </section>
     </main>
 
-</body>
 </html>

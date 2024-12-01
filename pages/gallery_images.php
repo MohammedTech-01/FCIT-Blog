@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body>
     <div id="gallery-container">
         <h1>Image Gallery</h1>
 
@@ -30,6 +29,5 @@
 
 
         <script src="/CPCS403-Final/script/gallery-image.js"></script>
-</body>
 
 </html>

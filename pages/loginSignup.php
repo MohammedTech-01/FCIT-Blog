@@ -9,7 +9,6 @@ $action = isset($_GET['action']) ? $_GET['action'] : '';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LogSign</title>
 </head>
-<body>
     <div class="container-login-signup">
         <?php if ($action === 'signup'): ?>
             <h1>Signup Successful!</h1>
@@ -25,5 +24,4 @@ $action = isset($_GET['action']) ? $_GET['action'] : '';
             <button onclick="window.location.href='/CPCS403-Final/index.php'">Go to Home</button>
         <?php endif; ?>
     </div>
-</body>
 </html>
