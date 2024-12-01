@@ -11,14 +11,15 @@
     <!-- Video Section -->
     <section class="video-section">
         <h2>Discover FCIT</h2>
-        <object width="100%" height="400" data="https://www.youtube.com/embed/vdMjlHTsz7c" type="text/html">
+        <object data="https://www.youtube.com/embed/vdMjlHTsz7c" type="text/html" width="100%" height="400">
             <p>Your browser does not support embedded videos. You can watch the video directly on
-                <a href="https://www.youtube.com/embed/vdMjlHTsz7c" target="_blank">YouTube</a>.
+                <a href="https://www.youtube.com/embed/vdMjlHTsz7c" target="_blank" rel="noopener noreferrer">YouTube</a>.
             </p>
         </object>
-        <p class="video-caption">Learn more about our faculty, programs, and achievements through this brief video.</p>
+        <p class="video-caption">
+            Learn more about our faculty, programs, and achievements through this brief video.
+        </p>
     </section>
-
 
     <!-- Mission and Vision -->
     <section class="mission-vision">
@@ -53,7 +54,7 @@
                 <p>Head of Research</p>
             </div>
             <div class="team-member">
-                <img src="images/member.png" alt="Faculty Member">
+                <img src="images/member.png" alt="Senior Faculty Member">
                 <h3>Dr. Saad Yazan</h3>
                 <p>Senior Faculty</p>
             </div>
