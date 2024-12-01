@@ -45,8 +45,8 @@ $base_url = "/CPCS403-Final";
         <a href="<?php echo $base_url; ?>/admin/logout.php"><button class="logout-btn">Log Out</button></a>
       <?php else: ?>
         <!-- If not logged in, show login and signup buttons -->
-        <a href="index.php?page=login"><button class="login-btn">Log In</button></a>
-        <a href="index.php?page=signup"><button class="signup-btn">Sign Up</button></a>
+        <a class="login-btn" href="index.php?page=login">Log In</a>
+        <a class="signup-btn" href="index.php?page=signup">Sign Up</a>
       <?php endif; ?>
     </div>
   </nav>

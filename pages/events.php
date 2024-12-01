@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FCIT Blog</title>
-    <link rel="stylesheet" href="../global/print.css"> <!-- Adjust if necessary -->
+    <link rel="stylesheet" href="global/print.css"> <!-- Adjust if necessary -->
 </head>
 
 <div class="events-container">

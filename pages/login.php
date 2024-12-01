@@ -1,6 +1,6 @@
 <?php
 if (isset($_GET['message']) && $_GET['message'] === 'login_required') {
-    echo "<p style='color: red; text-align: center;'>You must log in to access this page.</p>";
+  echo "<p style='color: red; text-align: center;'>You must log in to access this page.</p>";
 }
 ?>
 
@@ -24,11 +24,11 @@ if (isset($_GET['message']) && $_GET['message'] === 'login_required') {
       </div>
 
       <button type="submit" class="login-btn">Login</button>
-      <a class="signup-btn" href="signup.html"><button type="button">Sign Up</button></a>
+      <a href="/CPCS403-Final/" class="signup-btn">Sign Up</a>
     </form>
 
     <!-- Back to Home Button -->
-    <button type="button" class="home-btn" onclick="window.location.href='index.html';">
+    <button type="button" class="home-btn" onclick="window.location.href='index.php?page=home';">
       Back to Home
     </button>
   </div>

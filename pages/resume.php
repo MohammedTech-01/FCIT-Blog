@@ -15,9 +15,9 @@
         <section class="resume-container">
             <h2>View My Resume</h2>
             <!-- Embed PDF using object tag -->
-            <object data="/CPCS403-Final/resume/resume.pdf" type="application/pdf" width="100%" height="800px">
+            <object data="resume/resume.pdf" type="application/pdf" width="100%" height="800px">
                 <p>Your browser does not support PDFs. 
-                    <a href="/CPCS403-Final/resume/resume.pdf">Download the PDF</a> instead.</p>
+                    <a href="resume/resume.pdf">Download the PDF</a> instead.</p>
             </object>
         </section>
     </main>
