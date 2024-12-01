@@ -1,3 +1,5 @@
+<?php include 'includes/header.php'; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,12 +7,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FCIT Blog</title>
-    <link rel="stylesheet" href="global/main.css"> <!-- Adjust if necessary -->
+    <link rel="stylesheet" href="global/main.css">
 </head>
 
 <body>
-    <?php include 'includes/header.php'; ?> <!-- Include header without repeating <html> or <head> -->
-
     <div class="container">
         <?php
         // Default page content
@@ -30,7 +30,7 @@
         ?>
     </div>
 
-    <?php include 'includes/footer.php'; ?> <!-- Include footer -->
+    <?php include 'includes/footer.php'; ?>
 </body>
 
 </html>
