@@ -3,7 +3,7 @@ session_start();  // Start the session to access session variables like $_SESSIO
 $base_url = "/CPCS403-Final";
 ?>
 
-<header>
+<div>
   <nav>
     <h1><a href="index.php">FCIT BLOG</a></h1>
     <ul>
@@ -42,4 +42,4 @@ $base_url = "/CPCS403-Final";
       <?php endif; ?>
     </div>
   </nav>
-</header>
+</div>
