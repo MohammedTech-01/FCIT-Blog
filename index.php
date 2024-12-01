@@ -1,3 +1,4 @@
+<?php include 'includes/header.php'; ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -42,6 +43,7 @@
         ?>
     </div>
 
+    <?php include 'includes/footer.php'; ?>
 </body>
 
 </html>
