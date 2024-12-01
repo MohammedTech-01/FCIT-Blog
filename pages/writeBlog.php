@@ -1,3 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+</head>
+</html>
+
 <main class="write-blog-page">
   <section class="write-blog-container">
     <h1>Post a Blog</h1>

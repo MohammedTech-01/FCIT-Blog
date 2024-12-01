@@ -1,3 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+</head>
+</html>
+
 <!-- Hero Section (Home) -->
 <section id="hero">
   <div class="hero-text">

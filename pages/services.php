@@ -1,3 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+</head>
+</html>
+
 <div id="services-section">
     <h1>Our Services</h1>
     <div class="services-grid">

@@ -4,6 +4,12 @@ if (isset($_GET['message']) && $_GET['message'] === 'login_required') {
 }
 ?>
 
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+</head>
+</html>
 
 <div class="container-login">
   <!-- Left Side: Login Form -->

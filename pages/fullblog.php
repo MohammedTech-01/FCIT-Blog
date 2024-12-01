@@ -27,6 +27,13 @@ if ($result->num_rows === 0) {
 $blog = $result->fetch_assoc();
 ?>
 
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+</head>
+</html>
+
 <main class="fullblog-page">
     <!-- Left column: Full blog post -->
     <section class="blog-content">

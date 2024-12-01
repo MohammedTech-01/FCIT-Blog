@@ -25,8 +25,13 @@ if (isset($_GET['message'])) {
     }
 }
 ?>
-
-
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+</head>
+</html>
 
 
 <main class="blog-page">

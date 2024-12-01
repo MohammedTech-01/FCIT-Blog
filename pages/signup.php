@@ -1,3 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+</head>
+</html>
+
 <div class="container-signup">
     <!-- Left Side: Sign Up Form -->
     <div class="signup-form">

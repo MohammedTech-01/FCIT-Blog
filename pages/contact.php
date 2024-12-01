@@ -1,3 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+</head>
+</html>
+
 <section class="contact-container">
     <!-- Left column for the image -->
     <div class="contact-image">

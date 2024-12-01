@@ -10,14 +10,14 @@
 
     <!-- Video Section -->
     <section class="video-section">
-    <h2>Discover FCIT</h2>
-    <object width="100%" height="400" data="https://www.youtube.com/embed/vdMjlHTsz7c" type="text/html">
-        <p>Your browser does not support embedded videos. You can watch the video directly on 
-            <a href="https://www.youtube.com/embed/vdMjlHTsz7c" target="_blank">YouTube</a>.
-        </p>
-    </object>
-    <p class="video-caption">Learn more about our faculty, programs, and achievements through this brief video.</p>
-</section>
+        <h2>Discover FCIT</h2>
+        <object width="100%" height="400" data="https://www.youtube.com/embed/vdMjlHTsz7c" type="text/html">
+            <p>Your browser does not support embedded videos. You can watch the video directly on
+                <a href="https://www.youtube.com/embed/vdMjlHTsz7c" target="_blank">YouTube</a>.
+            </p>
+        </object>
+        <p class="video-caption">Learn more about our faculty, programs, and achievements through this brief video.</p>
+    </section>
 
 
     <!-- Mission and Vision -->
