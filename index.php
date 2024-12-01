@@ -1,5 +1,3 @@
-<?php include 'includes/header.php'; ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,8 +8,9 @@
     <link rel="stylesheet" href="global/main.css"> <!-- Adjust if necessary -->
 </head>
 
-
 <body>
+    <?php include 'includes/header.php'; ?> <!-- Include header without repeating <html> or <head> -->
+
     <div class="container">
         <?php
         // Default page content
@@ -31,7 +30,7 @@
         ?>
     </div>
 
-    <?php include 'includes/footer.php'; ?>
+    <?php include 'includes/footer.php'; ?> <!-- Include footer -->
 </body>
 
 </html>
