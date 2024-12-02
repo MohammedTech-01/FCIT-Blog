@@ -1,3 +1,6 @@
+<?php
+ob_start();
+?>
 <!DOCTYPE XHTML 1.0 Strict">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 
