@@ -10,7 +10,7 @@
     <main class="write-blog-page">
         <section class="write-blog-container">
             <h1>Post a Blog</h1>
-            <form action="/CPCS403-Final/admin/submit_blog.php" method="post" enctype="multipart/form-data" class="blog-form">
+            <form action="admin/submit_blog.php" method="post" enctype="multipart/form-data" class="blog-form">
                 <fieldset>
                     <legend>Blog Details</legend>
                     <div class="form-group">
