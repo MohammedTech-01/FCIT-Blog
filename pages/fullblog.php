@@ -39,9 +39,9 @@ $blog = $result->fetch_assoc();
         <section class="blog-content">
             <article class="blog-post">
                 <!-- Blog Image -->
-                <img src="../uploads/<?php echo htmlspecialchars($blog['image']); ?>" 
+                <!-- <img src="../uploads/<?php echo htmlspecialchars($blog['image']); ?>" 
                      alt="<?php echo htmlspecialchars($blog['title']); ?>" 
-                     class="blog-img" />
+                     class="blog-img" /> -->
 
                 <!-- Blog Title -->
                 <h1 class="blog-title"><?php echo htmlspecialchars($blog['title']); ?></h1>

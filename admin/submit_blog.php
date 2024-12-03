@@ -41,36 +41,36 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Handle image upload
-    $image_path = NULL;
-    if (isset($_FILES['image']) && $_FILES['image']['error'] == 0) {
-        // Check the file type (ensure it's an image)
-        $allowed_types = ['image/jpeg', 'image/png', 'image/gif'];
-        $file_type = $_FILES["image"]["type"];
+    // $image_path = NULL;
+    // if (isset($_FILES['image']) && $_FILES['image']['error'] == 0) {
+    //     // Check the file type (ensure it's an image)
+    //     $allowed_types = ['image/jpeg', 'image/png', 'image/gif'];
+    //     $file_type = $_FILES["image"]["type"];
         
-        if (in_array($file_type, $allowed_types)) {
-            $image_name = time() . "_" . basename($_FILES["image"]["name"]);
-            $target_dir = "../uploads/";
-            $target_file = $target_dir . $image_name;
+    //     if (in_array($file_type, $allowed_types)) {
+    //         $image_name = time() . "_" . basename($_FILES["image"]["name"]);
+    //         $target_dir = "../uploads/";
+    //         $target_file = $target_dir . $image_name;
 
-            // Check if uploads folder exists and is writable
-            if (!is_dir($target_dir)) {
-                mkdir($target_dir, 0755, true);
-            }
+    //         // Check if uploads folder exists and is writable
+    //         if (!is_dir($target_dir)) {
+    //             mkdir($target_dir, 0755, true);
+    //         }
 
-            if (is_writable($target_dir)) {
-                if (move_uploaded_file($_FILES["image"]["tmp_name"], $target_file)) {
-                    $image_path = "../uploads/" . $image_name;
-                } else {
-                    die("Error: Unable to upload file. Check folder permissions.");
-                }
-            } else {
-                die("Error: Upload folder is not writable.");
-            }
-        } else {
-            header("Location: ../index.php?page=blog&message=invalid_file_type");
-            exit();
-        }
-    }
+    //         if (is_writable($target_dir)) {
+    //             if (move_uploaded_file($_FILES["image"]["tmp_name"], $target_file)) {
+    //                 $image_path = "../uploads/" . $image_name;
+    //             } else {
+    //                 die("Error: Unable to upload file. Check folder permissions.");
+    //             }
+    //         } else {
+    //             die("Error: Upload folder is not writable.");
+    //         }
+    //     } else {
+    //         header("Location: ../index.php?page=blog&message=invalid_file_type");
+    //         exit();
+    //     }
+    // }
 
     // Insert blog post into the database
     $sql = "INSERT INTO blog_posts (username, title, author, email, category, content, blog_type, tags, image) 

@@ -10,7 +10,6 @@ async function loadBlogs() {
             const article = `
                 <article class="blog-post">
                     <a href="../index.php?page=fullblog&id=${blog.id}">
-                        <img src="${blog.image}" alt="${blog.title}" class="blog-img" />
                     </a>
                     <h2 class="blog-title">
                         <a href="../index.php?page=fullblog&id=${blog.id}">${blog.title}</a>

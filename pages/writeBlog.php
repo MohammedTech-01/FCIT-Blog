@@ -56,13 +56,13 @@
                         <label><input type="checkbox" name="tags[]" value="Opinion" /> Opinion</label>
                     </div>
                 </fieldset>
-                <div class="file-upload-container" id="fileUploadContainer">
+                <!-- <div class="file-upload-container" id="fileUploadContainer">
                     <img src="images/upload-icon.png" alt="Upload Icon" />
                     <p><strong>Drag file(s) here to upload.</strong></p>
                     <p>Alternatively, you can select a file by <a href="#" onclick="document.getElementById('fileInput').click();">clicking here</a></p>
                     <input type="file" id="fileInput" name="image" style="display: none;" />
                     <p id="fileName" style="margin-top: 10px; color: #555;"></p>
-                </div>
+                </div> -->
 
                 <div class="form-group">
                     <button type="submit" class="submit-btn">Post</button>
