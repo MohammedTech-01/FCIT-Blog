@@ -42,14 +42,14 @@
                 </p>
             </div>
             <div class="service-card">
-                <img src="images/resources.png" alt="Downloadable Resources" />
+                <img src="images/Resources.png" alt="Downloadable Resources" />
                 <h3>Downloadable Resources</h3>
                 <p>
                     Access free guides, eBooks, and more to improve your knowledge and skills.
                 </p>
             </div>
             <div class="service-card">
-                <img src="images/profile.png" alt="Customizable Profile" />
+                <img src="images/Profile.png" alt="Customizable Profile" />
                 <h3>Customizable Profile</h3>
                 <p>
                     Sign up to create your profile, bookmark your favorite posts, and personalize your experience.
