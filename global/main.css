@@ -423,7 +423,7 @@ a {
 
 
 /* Hero Section */
-#hero {
+.hero {
   height: 100vh;
   /* Full viewport height */
   background-image: url("../images/heroPage.jpg");
@@ -438,7 +438,7 @@ a {
 }
 
 /* Overlay to reduce visibility of the background image */
-#hero::before {
+.hero::before {
   content: "";
   position: absolute;
   top: 0;
@@ -1409,7 +1409,7 @@ input[type="checkbox"] {
 }
 
 /* Footer */
-footer {
+.footer {
   text-align: center;
   padding: 20px;
   background-color: #002147;

@@ -11,7 +11,7 @@
 
 <body>
   <!-- Hero Section (Home) -->
-  <section id="hero">
+  <section class="hero">
     <div class="hero-text">
       <h1>Welcome to FCIT Blog</h1>
       <p>Explore the latest stories on FCIT and more.</p>

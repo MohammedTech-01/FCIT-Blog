@@ -22,7 +22,7 @@ session_start(); // Start the session to access session variables like $_SESSION
     <form action="index.php?page=search" method="get">
         <div>
             <label for="search-input">Search for a destination:</label>
-            <input type="text" name="query" id="search-input" required="required" />
+            <input type="text" name="query" id="search-input" />
         </div>
         <div>
             <!-- <button type="submit" id="search-btn">
