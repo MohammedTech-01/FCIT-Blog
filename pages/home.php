@@ -1,5 +1,4 @@
 
-<body>
     <div class="hero">
         <div class="hero-text">
             <h1>Welcome to FCIT Blog</h1>
@@ -12,5 +11,4 @@
             </div>
         </div>
     </div>
-</body>
 
