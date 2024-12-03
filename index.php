@@ -1,19 +1,19 @@
 <?php
 ob_start();
 ?>
-<!DOCTYPE XHTML 1.0 Strict"> 
+<!DOCTYPE XHTML 1.0 Strict">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FCIT Blog</title>
-    <link rel="stylesheet" href="global/main.css"/>
+    <link rel="stylesheet" href="global/main.css" />
 </head>
 
 <body>
-<?php include 'includes/header.php'; ?>
     <div class="container">
+        <?php include 'includes/header.php'; ?>
         <?php
         // Check if a page parameter is set
         $page = isset($_GET['page']) ? $_GET['page'] : 'home';
@@ -43,8 +43,7 @@ ob_start();
             echo '<p>Page not found.</p>';
         }
         ?>
+
+        <?php include 'includes/footer.php'; ?>
     </div>
-
-    <?php include 'includes/footer.php'; ?>
 </body>
-
