@@ -46,4 +46,4 @@ ob_start();
 
     </div>
     <?php include 'includes/footer.php'; ?>
-</body>
+<body/>

@@ -477,12 +477,17 @@ a {
   cursor: pointer;
   font-size: 16px;
   border-radius: 5px;
-  margin-top: 15px;
+  margin-bottom: 15px; /* Space below the button */
+}
+
+.hero-text .button:last-child {
+  margin-bottom: 0; /* Remove margin for the last button */
 }
 
 .hero-text .button:hover {
   background-color: #215a50;
 }
+
 
 /* Hero Section for About Us Page */
 .about-us-hero {
