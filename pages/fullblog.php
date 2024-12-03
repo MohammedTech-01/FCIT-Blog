@@ -1,5 +1,5 @@
 <?php
-include realpath(__DIR__ . '../admin/db.php'); // Ensure the correct path to db.php
+include realpath(__DIR__ . '/../admin/db.php'); // Corrected path
 
 // Check if the blog ID is set and valid
 $blog_id = isset($_GET['id']) ? (int)$_GET['id'] : 0;
