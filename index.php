@@ -49,4 +49,3 @@ ob_start();
     <?php include 'includes/footer.php'; ?>
 </body>
 
-<!-- </html> -->

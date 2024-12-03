@@ -2,9 +2,7 @@
 session_start(); // Start the session to access session variables like $_SESSION['username']
 // $base_url = "/CPCS403-Final";
 ?>
-<!-- <header> -->
 <div class="navbar">
-  <!-- <nav> -->
   <h1><a href="index.php">FCIT BLOG</a></h1>
   <ul>
     <li><a href="index.php?page=home">Home</a></li>
@@ -48,7 +46,5 @@ session_start(); // Start the session to access session variables like $_SESSION
       <a class="signup-btn" href="index.php?page=signup">Sign Up</a>
     <?php endif; ?>
   </div>
-  <!-- </nav> -->
 </div>
 
-<!-- </header> -->
