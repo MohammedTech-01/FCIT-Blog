@@ -20,8 +20,8 @@
         <div class="thumbnails">
             <img src="images/blogGallery.png" alt="Image 1" class="thumbnail" />
             <img src="images/blogGallery2.png" alt="Image 2" class="thumbnail" />
-            <img src="images/blogGallery3.png" alt="Image 3" class="thumbnail" />
-            <img src="images/blogGallery4.png" alt="Image 4" class="thumbnail" />
+            <img src="images/blogGallery2.png" alt="Image 3" class="thumbnail" />
+            <img src="images/blogGallery1.png" alt="Image 4" class="thumbnail" />
         </div>
 
         <!-- The larger display area for the clicked image -->
