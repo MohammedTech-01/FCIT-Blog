@@ -73,8 +73,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // }
 
     // Insert blog post into the database
-    $sql = "INSERT INTO blog_posts (username, title, author, email, category, content, blog_type, tags, image) 
-            VALUES ('$username', '$title', '$author', '$email', '$category', '$content', '$blog_type', '$tags', '$image_path')";
+    $sql = "INSERT INTO blog_posts (username, title, author, email, category, content, blog_type, tags) 
+            VALUES ('$username', '$title', '$author', '$email', '$category', '$content', '$blog_type', '$tags')";
 
     if ($conn->query($sql) === TRUE) {
         // Redirect after successful blog post insertion
