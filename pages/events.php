@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>FCIT Blog</title>
-    <!-- <link rel="stylesheet" href="global/print.css" /> -->
+    <link rel="stylesheet" href="global/print.css" />
 </head>
 <body>
     <div class="events-container">
@@ -38,5 +38,7 @@
         </table>
         <button id="print-btn">Print Table</button>
     </div>
+
+    <script type="text/javascript" src="../script/event.js"></script>
 </body>
 </html>
