@@ -8,7 +8,6 @@ $result = $conn->query($sql);
 $blogs = [];
 if ($result->num_rows > 0) {
     while ($row = $result->fetch_assoc()) {
-        $row['image'] = "../" . $row['image']; // Adjust relative path for frontend
         $blogs[] = $row;
     }
 }

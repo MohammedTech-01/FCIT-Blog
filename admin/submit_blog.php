@@ -78,7 +78,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($conn->query($sql) === TRUE) {
         // Redirect after successful blog post insertion
-        header("Location: ../index.php?page=blog&message=blog_posted");
+        header("Location: ../index.php?page=blog_post_done");
         exit();
     } else {
         // If there's an error in the SQL query

@@ -33,7 +33,8 @@ ob_start();
             'events',
             'loginSignup',
             'feedback',
-            'gallery_images'
+            'gallery_images',
+            'blog_post_done',
         ];
 
         // Include the requested page if it's allowed

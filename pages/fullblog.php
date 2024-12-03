@@ -1,5 +1,5 @@
 <?php
-include realpath(__DIR__ . '/../admin/db.php'); // Ensure the correct path to db.php
+include realpath(__DIR__ . '../admin/db.php'); // Ensure the correct path to db.php
 
 // Check if the blog ID is set and valid
 $blog_id = isset($_GET['id']) ? (int)$_GET['id'] : 0;
@@ -42,11 +42,6 @@ $blog = $result->fetch_assoc();
         <!-- Left column: Full blog post -->
         <section class="blog-content">
             <article class="blog-post">
-                <!-- Blog Image -->
-                <!-- <img src="../uploads/<?php echo htmlspecialchars($blog['image']); ?>" 
-                     alt="<?php echo htmlspecialchars($blog['title']); ?>" 
-                     class="blog-img" /> -->
-
                 <!-- Blog Title -->
                 <h1 class="blog-title"><?php echo htmlspecialchars($blog['title']); ?></h1>
 
