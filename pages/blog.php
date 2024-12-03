@@ -31,7 +31,11 @@
                 echo '<p>Invalid file type. Only JPG, PNG, and GIF images are allowed.</p>';
                 break;
             case 'blog_posted':
-                echo '<p>Your blog post has been successfully submitted!</p>';
+                echo `      <div class="message-container">
+                                <h1>Your blog post has been submitted successfully!</h1>
+                                <a href="write_blog.php">Write Another Blog</a>
+                                <a href="view_blogs.php">View Blogs</a>
+                            </div>`;
                 break;
             default:
                 echo '<p>Unknown message.</p>';
@@ -70,7 +74,7 @@
         </aside>
     </main>
 
-    <script src="/CPCS403-Final/script/blogs.js"></script>
+    <script src="../script/blogs.js"></script>
 </body>
 
 </html>

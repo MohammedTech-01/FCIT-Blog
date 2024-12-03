@@ -3,8 +3,8 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>Post a Blog</title>
-    <script type="text/javascript" src="CPCS403-Final/script/validation.js"></script> <!-- External JavaScript for form validation -->
-    <script type="text/javascript" src="CPCS403-Final/script/file-upload.js"></script>
+    <script type="text/javascript" src="../script/validation.js"></script> <!-- External JavaScript for form validation -->
+    <script type="text/javascript" src="../script/file-upload.js"></script>
 </head>
 <body>
     <main class="write-blog-page">
