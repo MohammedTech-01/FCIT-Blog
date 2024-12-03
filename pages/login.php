@@ -32,7 +32,7 @@ if (isset($_GET['message']) && $_GET['message'] === 'login_required') {
         </div>
 
         <button type="submit" class="login-btn">Login</button>
-        <a href="/CPCS403-Final/" class="signup-btn">Sign Up</a>
+        <a href="../index.php?page=signup" class="signup-btn">Sign Up</a>
       </form>
 
       <!-- Back to Home Button -->

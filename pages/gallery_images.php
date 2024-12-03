@@ -28,7 +28,7 @@
         </div>
     </div>
 
-    <script type="text/javascript" src="/CPCS403-Final/script/gallery-image.js"></script>
+    <script type="text/javascript" src="../script/gallery-image.js"></script>
 </body>
 
 </html>

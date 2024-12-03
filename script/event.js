@@ -1,6 +1,6 @@
 async function populateTable() {
     try {
-        const response = await fetch('/CPCS403-Final/admin/event.php');
+        const response = await fetch('../admin/event.php');
         const events = await response.json();
 
         const tbody = document.getElementById('events-tbody');

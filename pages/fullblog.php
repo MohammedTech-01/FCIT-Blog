@@ -39,7 +39,7 @@ $blog = $result->fetch_assoc();
         <section class="blog-content">
             <article class="blog-post">
                 <!-- Blog Image -->
-                <img src="/CPCS403-Final/uploads/<?php echo htmlspecialchars($blog['image']); ?>" 
+                <img src="../uploads/<?php echo htmlspecialchars($blog['image']); ?>" 
                      alt="<?php echo htmlspecialchars($blog['title']); ?>" 
                      class="blog-img" />
 
