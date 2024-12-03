@@ -1411,6 +1411,6 @@ footer {
   padding: 20px;
   background-color: #002147;
   color: white;
-  position: relative;
+  /* position: relative; */
   /* Make sure footer isn't being pushed off-screen */
 }

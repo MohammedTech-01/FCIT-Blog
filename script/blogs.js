@@ -31,5 +31,4 @@ async function loadBlogs() {
     }
 }
 
-
 window.onload = loadBlogs;
