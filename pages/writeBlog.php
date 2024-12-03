@@ -15,15 +15,15 @@
                     <legend>Blog Details</legend>
                     <div class="form-group">
                         <label for="title">Blog Title:</label>
-                        <input type="text" id="title" name="title" placeholder="Enter your blog title" required="required" />
+                        <input type="text" id="title" name="title" required="required" />
                     </div>
                     <div class="form-group">
                         <label for="author">Author Name:</label>
-                        <input type="text" id="author" name="author" placeholder="Enter your name" required="required" />
+                        <input type="text" id="author" name="author" required="required" />
                     </div>
                     <div class="form-group">
                         <label for="email">Email Address:</label>
-                        <input type="email" id="email" name="email" placeholder="Enter your email" required="required" onblur="checkEmail();" />
+                        <input type="email" id="email" name="email" required="required" onblur="checkEmail();" />
                         <div id="email_error" style="color: red;"></div> <!-- Display email validation message -->
                     </div>
 
@@ -42,7 +42,7 @@
                     <legend>Content Details</legend>
                     <div class="form-group">
                         <label for="content">Blog Content:</label>
-                        <textarea id="content" name="content" placeholder="Write your blog content here..." required="required"></textarea>
+                        <textarea id="content" name="content" required="required"></textarea>
                     </div>
                     <div class="radio-group">
                         <label>Blog Type:</label>
@@ -56,13 +56,6 @@
                         <label><input type="checkbox" name="tags[]" value="Opinion" /> Opinion</label>
                     </div>
                 </fieldset>
-                <!-- <div class="file-upload-container" id="fileUploadContainer">
-                    <img src="images/upload-icon.png" alt="Upload Icon" />
-                    <p><strong>Drag file(s) here to upload.</strong></p>
-                    <p>Alternatively, you can select a file by <a href="#" onclick="document.getElementById('fileInput').click();">clicking here</a></p>
-                    <input type="file" id="fileInput" name="image" style="display: none;" />
-                    <p id="fileName" style="margin-top: 10px; color: #555;"></p>
-                </div> -->
 
                 <div class="form-group">
                     <button type="submit" class="submit-btn">Post</button>

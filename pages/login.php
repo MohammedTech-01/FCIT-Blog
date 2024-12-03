@@ -19,18 +19,18 @@ if (isset($_GET['message']) && $_GET['message'] === 'login_required') {
       <h1>Hello, welcome!</h1>
       <form action="admin/login.php" method="post">
         <label for="email">Email address</label>
-        <input type="email" id="email" name="email" placeholder="name@mail.com" required="required" />
-
+        <input type="email" id="email" name="email" required="required" />
+        
         <label for="password">Password</label>
-        <input type="password" id="password" name="password" placeholder="********" required="required" />
-
+        <input type="password" id="password" name="password" required="required" />
+        
         <div class="remember-forgot">
           <label>
             <input type="checkbox" name="remember" /> Remember me
           </label>
           <a href="#">Forgot password?</a>
         </div>
-
+        
         <button type="submit" class="login-btn">Login</button>
         <a href="../index.php?page=signup" class="signup-btn">Sign Up</a>
       </form>

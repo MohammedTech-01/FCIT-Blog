@@ -9,52 +9,24 @@
         <!-- Left Side: Sign Up Form -->
         <div class="signup-form">
             <h1>Create Your Account</h1>
-            <form action="admin/signup.php" method="post"> <!-- Form now submits to signup.php -->
+            <form action="admin/signup.php" method="post">
                 <label for="username">Username</label>
-                <input
-                    type="text"
-                    id="username"
-                    name="username"
-                    placeholder="Choose a username"
-                    required="required"
-                />
+                <input type="text" id="username" name="username" required="required" />
 
                 <label for="email">Email address</label>
-                <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    placeholder="name@mail.com"
-                    required="required"
-                />
+                <input type="email" id="email" name="email" required="required" />
 
                 <label for="password">Password</label>
-                <input
-                    type="password"
-                    id="password"
-                    name="password"
-                    placeholder="********"
-                    required="required"
-                />
+                <input type="password" id="password" name="password" required="required" />
 
                 <label for="confirm-password">Confirm Password</label>
-                <input
-                    type="password"
-                    id="confirm-password"
-                    name="confirm-password"
-                    placeholder="********"
-                    required="required"
-                />
+                <input type="password" id="confirm-password" name="confirm-password" required="required" />
 
                 <button type="submit" class="signup-btn">Sign Up</button>
             </form>
 
             <!-- Back to Home Button -->
-            <button
-                type="button"
-                class="home-btn"
-                onclick="window.location.href='index.html';"
-            >
+            <button type="button" class="home-btn" onclick="window.location.href='index.html';">
                 Back to Home
             </button>
         </div>

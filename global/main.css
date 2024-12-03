@@ -30,7 +30,7 @@ a {
 }
 
 /* Navbar styling */
-nav {
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -42,26 +42,26 @@ nav {
   z-index: 1000;
 }
 
-nav h1 {
+.navbar h1 {
   color: white;
 }
 
-nav ul {
+.navbar ul {
   list-style: none;
   font-size: 16px;
 }
 
-nav ul li {
+.navbar ul li {
   display: inline;
   margin-right: 20px;
 }
 
-nav ul li a {
+.navbar ul li a {
   color: white;
   text-decoration: none;
 }
 
-nav ul li a:hover {
+.navbar ul li a:hover {
   color: #215a29;
 }
 
