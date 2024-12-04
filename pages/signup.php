@@ -30,7 +30,7 @@
             </form>
 
             <!-- Back to Home Button -->
-            <button type="button" class="home-btn" onclick="window.location.href='index.html';">
+            <button type="button" class="home-btn" onclick="window.location.href='index.php?page=home';">
                 Back to Home
             </button>
         </div>
