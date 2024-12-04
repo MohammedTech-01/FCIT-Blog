@@ -48,8 +48,7 @@
 <body>
     <div class="message-container">
         <h1>Your blog post has been submitted successfully!</h1>
-        <a href="write_blog.php">Write Another Blog</a>
-        <a href="view_blogs.php">View Blogs</a>
+        <a class="home-btn" href="index.php?page=home">Back to Home</a>
     </div>
 </body>
 </html>
