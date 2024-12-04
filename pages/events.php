@@ -20,8 +20,8 @@
                     <th colspan="2">Location and Description</th>
                 </tr>
                 <tr>
-                    <th>Event Name</th>
                     <th>Date</th>
+                    <th>Event Name</th>
                     <th>Time</th>
                     <th>Location</th>
                     <th>Description</th>
