@@ -1,30 +1,39 @@
-body * {
-    visibility: hidden;
+/* General styles for the page (default for screen) */
+@media screen {
+    body {
+        font-family: Arial, sans-serif;
+    }
 }
 
-.events-table,
-.events-table * {
-    visibility: visible;
-}
+/* Print-specific styles */
+@media print {
+    /* Hide everything by default */
+    body * {
+        display: none;
+        visibility: hidden;
+    }
 
-.events-table {
-    margin: 0;
-    width: 100%;
-    border: none;
-}
+    /* Show only the table and its contents */
+    .events-table,
+    .events-table * {
+        display: table;
+        visibility: visible;
+    }
 
-.events-table caption {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
+    /* Ensure the table has a clear layout */
+    .events-table {
+        margin: 0 auto; /* Center the table */
+        width: 100%;
+        border: 1px solid #ddd;
+    }
 
-.events-table th,
-.events-table td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: left;
-}
+    /* Footer removal if not needed */
+    tfoot {
+        display: none;
+    }
 
-tfoot {
-    visibility: hidden;
+    /* Optional: Remove print button visibility */
+    #print-btn {
+        display: none;
+    }
 }

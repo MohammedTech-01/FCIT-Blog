@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="global/print.css" />
 </head>
 <body>
-    <div class="events-container">
+<div class="events-container">
         <h1>Upcoming Events</h1>
         <table class="events-table" id="events-table">
             <caption>FCIT Blog - Upcoming Events</caption>
@@ -36,9 +36,9 @@
                 </tr>
             </tfoot>
         </table>
-        <button id="print-btn">Print Table</button>
+        <button id="print-btn" onclick="printTable()">Print Table</button>
     </div>
 
-    <script type="text/javascript" src="../script/event.js"></script>
+    <script src="../script/event.js"></script>
 </body>
 </html>
