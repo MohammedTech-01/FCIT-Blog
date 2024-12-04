@@ -7,35 +7,35 @@
 
 /* Print-specific styles */
 @media print {
-    /* Hide everything except the table */
     body * {
-        display: none;
         visibility: hidden;
     }
-
-    /* Ensure the table and its contents are visible */
-    .events-container,
-    .events-container * {
-        display: block;
+    
+    .events-table,
+    .events-table * {
         visibility: visible;
     }
-
-    /* Keep the table layout */
+    
     .events-table {
-        margin: 0 auto; /* Center the table */
+        margin: 0;
         width: 100%;
-        border-collapse: collapse;
+        border: none;
     }
-
+    
+    .events-table caption {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    
     .events-table th,
     .events-table td {
         border: 1px solid #ddd;
         padding: 8px;
         text-align: left;
     }
-
-    /* Remove the print button visibility in the print view */
-    #print-btn {
-        display: none;
+    
+    tfoot {
+        visibility: hidden;
     }
+    
 }
